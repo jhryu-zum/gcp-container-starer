@@ -11,4 +11,5 @@ WORKDIR /workspace
 RUN pip install requests zmq simplejson
 
 #CMD node server.js
-CMD python startproc.py
+ENTRYPOINT python startproc.py
+
