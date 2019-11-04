@@ -8,7 +8,7 @@ EXPOSE 80
 RUN git clone https://github.com/jhryu-zum/gcp-container-starer.git /workspace
 #ENV APP_HOME /app
 WORKDIR /workspace
-RUN pip install requests
+RUN pip install requests zmq simplejson
 
 #CMD node server.js
 CMD python startproc.py
